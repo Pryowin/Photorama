@@ -16,6 +16,7 @@
 		FD4F55061F254E8C008C37E6 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F55051F254E8C008C37E6 /* PhotosViewController.swift */; };
 		FD4F55081F256CEF008C37E6 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F55071F256CEF008C37E6 /* FlickrAPI.swift */; };
 		FD4F550A1F259271008C37E6 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F55091F259271008C37E6 /* PhotoStore.swift */; };
+		FD4F55101F263C84008C37E6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F550F1F263C84008C37E6 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FD4F55051F254E8C008C37E6 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		FD4F55071F256CEF008C37E6 /* FlickrAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 		FD4F55091F259271008C37E6 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		FD4F550F1F263C84008C37E6 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				FD4F54D71F254E66008C37E6 /* AppDelegate.swift */,
 				FD4F55051F254E8C008C37E6 /* PhotosViewController.swift */,
 				FD4F55071F256CEF008C37E6 /* FlickrAPI.swift */,
+				FD4F550F1F263C84008C37E6 /* Photo.swift */,
 				FD4F55091F259271008C37E6 /* PhotoStore.swift */,
 				FD4F54DB1F254E66008C37E6 /* Main.storyboard */,
 				FD4F54DE1F254E66008C37E6 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				FD4F55061F254E8C008C37E6 /* PhotosViewController.swift in Sources */,
 				FD4F550A1F259271008C37E6 /* PhotoStore.swift in Sources */,
 				FD4F54D81F254E66008C37E6 /* AppDelegate.swift in Sources */,
+				FD4F55101F263C84008C37E6 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
