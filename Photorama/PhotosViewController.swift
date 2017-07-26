@@ -11,13 +11,29 @@ import UIKit
 
 class PhotosViewController: UIViewController {
     
+    
+    @IBAction func photoTypeChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+            case 0:
+                selectPhotos(type: "interesting")
+            case 1:
+                selectPhotos(type: "recent")
+            default:
+                break
+        }
+    }
+   
     @IBOutlet var imageView: UIImageView!
     var store: PhotoStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        selectPhotos(type: "interesting")
         
-        store.fetchInterestingPhotos {
+    }
+    func selectPhotos(type: String) {
+
+        store.fetchPhotos(type: type) {
             (photosResult) -> Void in
             
             switch photosResult {
@@ -31,6 +47,7 @@ class PhotosViewController: UIViewController {
                 
             }
         }
+
     }
     
     func updateImageView (for photo: Photo) {
