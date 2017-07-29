@@ -42,6 +42,21 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
             self.collectionView.reloadSections(IndexSet(integer: 0))
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showPhoto"?:
+            if let selectedIndexPath  = collectionView.indexPathsForSelectedItems?.first {
+                let photo = photoDataSource.photos[selectedIndexPath.row]
+                let destVC = segue.destination  as! PhotoInfoViewController
+                destVC.photo = photo
+                destVC.store = store
+            }
+        default:
+            preconditionFailure("Unexpected Segue Failure")
+        }
+    }
+    
     // MARK: - Delegate Methods
   
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
